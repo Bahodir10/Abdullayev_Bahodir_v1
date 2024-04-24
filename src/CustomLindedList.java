@@ -9,9 +9,8 @@ public class CustomLindedList<T> {
         public Node(T data) {
             this.data = data;
         }
-    }
-
-    public CustomLindedList() {
+    
+    public CustomLinkedList() {
         head = null;
         size = 0;
     }
