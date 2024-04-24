@@ -11,7 +11,7 @@ public class CustomLindedList<T> {
         }
     }
 
-    public MyLinkedList() {
+    public CustomLindedList() {
         head = null;
         size = 0;
     }
