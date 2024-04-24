@@ -1,0 +1,40 @@
+1.Dequeue va Queuening farqlari?
+2.Hashmap ma'lumotni qanday saqlaydi?
+3.Nega Enumdan foydalanish avzalroq?
+4.Exception heirarchy?
+
+1.
+Dequeue (Double Ended Queue) ва Queue ikkalasi ham mavjud ma'lumotlar strukturalaridir, lekin ularning ishlatilish usullari biroz farq qiladi.
+Queue faqat bitta tomonga ishlaydi, ya'ni ma'lumotlarni faqat oxiriga qo'shish va boshidan olib tashlash mumkin.
+Bu "First In, First Out" (FIFO) tamoyiliga amal qiladi, ya'ni avval qo'shilgan ma'lumot avval olib tashlanadi.
+Eng ko'p qo'llaniladigan amallari: enqueue (qo'shish) va dequeue (olib tashlash).
+
+Dequeue (Ikki tomonlama navbat):
+
+Dequeue ikki tomonga ishlaydi, ya'ni ma'lumotlarni ham boshiga, ham oxiriga qo'shish va olib tashlash mumkin.
+Bu "First In, First Out" (FIFO) va "Last In, First Out" (LIFO) tamoyillariga amal qiladi.
+Eng ko'p qo'llaniladigan amallari: addFirst, addLast, removeFirst, removeLast.
+
+
+2.
+HashMap ma'lumotlarni kalitlar (keys) va qiymatlar (values) juftliklari ko'rinishida saqlaydi. Bu kalitlar ma'lum bir hashlovchi funksiya yordamida hashlar (raqamlar) ga aylantiriladi va bu hashlar orqali tegishli qiymatlar topiladi.
+HashMap quyidagi asosiy bosqichlardan iborat:
+
+Hashing: Kalitlar hashlovchi funksiya orqali hashlar (raqamlar) ga aylantiriladi.
+Indekslash: Hosil qilingan hashlar asosida HashMap ichidagi massivda indeks (index) aniqlanadi.
+Zanjirlar: Agar bir xil hashga ega bo'lgan kalitlar bo'lsa, ularga tegishli qiymatlar zanjir ko'rinishida saqlanadi.
+
+HashMap ma'lumotlarni tezkor topish imkonini beradi, chunki kalitlar orqali qiymatlarni topish vaqti o'rtacha holda O(1) ga teng bo'ladi. Ammo, eng yomon holatda, barcha kalitlar bir xil hashga ega bo'lsa, zanjir uzunligi N ga teng bo'ladi va qidirish vaqti O(N) ga teng bo'ladi.
+
+Nega Enumdan foydalanish avzalroq?
+
+3.Enumlar (Enum) Java tili yordamida yaratilgan maxsus ma'lumot turidir. Ularga quyidagi afzalliklari uchun ustuvorlik beriladi:
+
+Xavfsizlik: Enumlar faqat oldindan belgilangan qiymatlarni qabul qiladi, boshqa qiymatlar qo'shib bo'lmaydi.
+Samaradorlik: Enumlarni kompilyatsiya jarayonida birlamchi tarjima qilinadi, bu ularni tezkor va samarali qiladi.
+O'qilish osonligi: Enumlar nomlari orqali aniq anglatiladi, bu kodni o'qish va tushunishni osonlashtiradi.
+Type Safety: Enumlar alohida turdagi ob'ektlar hisoblanadi, bu xatolarni oldini olishga yordam beradi.
+Qo'shimcha xususiyatlar: Enumlarga usullar, konstantalar va boshqa xususiyatlar qo'shish mumkin.
+
+Odatda, enumlardan ma'lum qiymatlarni ro'yxatdan o'tkazish uchun foydalaniladi, masalan: hafta kunlari, oy nomlari, boshqaruv buyruqlari va hokazo.
+
